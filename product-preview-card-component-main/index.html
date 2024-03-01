@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <title>Frontend Mentor | Product preview card component</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700&display=swap">
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: hsl(30, 38%, 92%);
+      color: white;
+      text-align: center;
+    }
+
+    .curvy {
+    }    
+
+    .container {
+      width: 500px;
+      margin: 50px auto;
+    }
+
+    .card {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      background-color: hsl(0, 0%, 100%);
+      border-radius: 10px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .image {
+      height: 400px;
+      margin-top: 0;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+
+    .text {
+      color: hsl(228, 12%, 48%);
+      padding: 5px;
+    }
+
+    strong {
+      font-weight: 700;
+      font-size: 35px;
+    }
+
+    .prv-prc {
+      text-decoration: line-through;
+    }
+
+    .button {
+      display: inline-block;
+      text-decoration: none;
+      justify-content: center;
+      background-color: hsl(158, 36%, 37%);
+      padding: 15px;
+      border-radius: 5px;
+      color: white;
+    }
+
+    .cart {
+      width: auto;
+    }
+
+    .button:hover{
+      transition: 0.3s;
+      background-color: hsl(158, 38%, 20%);
+    } 
+    
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    @media screen and (max-width: 375px) {
+      body {
+        display: flex;
+        flex-direction: column;
+      }
+      * {
+        /* border: 1px solid red; */
+      }
+      .container {
+        width: 300px;
+
+      }
+        img {
+          padding-top: 15px;
+          border-radius: 5px;
+        }
+
+      .card {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .text {
+        padding: 15px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+
+    <div class="card">
+      <div class="image">
+        <img src="/images/image-product-desktop.jpg" alt="" />
+      </div>
+
+      <div class="text">
+        <p>P E R F U M E</p>
+
+        <h1 class="curvy" style="color: black;">Gabrielle Essence Eau De Parfum</h1>
+        <p> A floral, solar and voluptuous interpretation composed by Olivier Polge,
+          Perfumer-Creator for the House of CHANEL.</p>
+
+        <p class="price"><span><strong class="curvy" style="color: hsl(158, 36%, 37%);">$149.99    </strong></span><span class="prv-prc">$169.99</span></p>
+        <br>
+        <a class="button" href="#"><img class="cart" src="/images/icon-cart.svg" alt="cart-icon">   Add to Cart</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="attribution">
+    Challenge by
+    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Your
+      Name Here</a>.
+  </div>
+</body>
+
+</html>

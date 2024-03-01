@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Order summary card</title>
+  <style>
+    body {
+      background-image: url(/images/pattern-background-desktop.svg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-color: hsl(225, 100%, 94%);
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .card {
+      text-align: center;
+      display: grid;
+      width: 450px;
+      margin: auto;
+      margin-top: 75px;
+      margin-bottom: 75px;
+      grid-template-rows: 1fr 1fr;
+      background-color: hsl(0, 0%, 100%);
+      border-radius: 25px;
+    }
+
+    .animation {
+      border-radius: 25px 25px 0 0;
+    }
+
+    h2 {
+      margin-top: -35px;
+    }
+
+    .container {
+      width: 500px;
+      margin: 50px auto;
+    }
+
+    .listen {
+      color: hsl(224, 23%, 55%);
+      margin: 0px 50px;
+      padding: 5px;
+    }
+
+    .plan {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      border-radius: 7px;
+      background-color: hsl(226, 100%, 90%);
+      margin: 20px 50px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+
+    .annual {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .change {
+      color: hsl(245, 75%, 52%);
+    }
+
+    .change:hover {
+      color: hsl(225, 85%, 79%);
+    }
+
+    .proceed {
+      margin: 5px 50px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      background-color: hsl(245, 75%, 52%);
+      border-radius: 7px;
+    }
+
+    .proceed:hover {
+      background-color: hsl(225, 85%, 79%);
+    }
+
+    .proceed a {
+      text-decoration: none;
+      color: white;
+    }
+
+    .cancel {
+      color: hsl(224, 23%, 55%);
+      text-decoration: none;
+    }
+
+    .cancel:hover {
+      color: black;
+    }
+
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    @media screen and (max-width: 375px) {
+
+      body {
+        background-image: url(/images/pattern-background-mobile.svg);
+      }
+
+      .card {
+        width: 300px;
+      }
+
+      .animation {
+        width: 300px;
+      }
+
+      h2 {
+        margin-top: -75px;
+      }
+
+      .plan {
+        margin: 10px;
+      }
+
+      .proceed {
+        margin: 10px;
+        padding: 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="card">
+
+    <div><img class="animation" src="/images/illustration-hero.svg" alt=""></div>
+
+    <div>
+      <h2 style="color: hsl(223, 47%, 23%);">Order Summary</h2>
+      <p class="listen">
+        You can now listen to millions of songs, audiobooks, and podcasts on any
+        device anywhere you like!</p>
+
+      <div class="plan">
+        <div><img src="/images/icon-music.svg" alt=""></div>
+        <div class="annual"> <span style="color: hsl(223, 47%, 23%);"><strong>Annual Plan</strong></span> <span
+            style="color: hsl(224, 23%, 55%);">$59.99/year</span> </div>
+        <a class="change" href=""><strong>Change</strong></a>
+      </div>
+
+
+      <p class="proceed"><a href="#"><strong>Proceed to Payment</strong></a></p>
+
+
+      <p><a class="cancel" href="#"><strong>Cancel Order</strong></a></p>
+    </div>
+
+
+    <footer>
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="#">Tyrone Freeman</a></div>
+    </footer>
+    <br>
+</body>
+
+</html>
